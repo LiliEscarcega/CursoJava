@@ -16,7 +16,7 @@ public class HolaMundo
 
         Loops loops = new Loops();
         loops.iterarConFor();
-
+        //creando nueva innstancia de auto
        Auto auto = new Auto ();
         System.out.println(auto.getPlaca());
 
@@ -25,7 +25,7 @@ public class HolaMundo
         System.out.println("Numero de llantas " + moto.getNumeroLlantas());
         moto.lavarVehiculo();
 
-
+       //holahola commit
        try{
            Auto auto2 = new Auto ("1234567"); //excepcion
            System.out.println(auto2.getPlaca());

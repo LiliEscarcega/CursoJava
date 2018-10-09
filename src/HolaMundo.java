@@ -12,6 +12,10 @@ public class HolaMundo
 {
     public static void main (String[] args) throws PlacaInvalidaException
     {
+        String cadena1 = "Hola mundo";
+        String cadena2 = "Hola mundo";
+        System.out.println(cadena1.equals(cadena2));
+
         System.out.println("Hola mundo");
 
         Loops loops = new Loops();
@@ -27,7 +31,7 @@ public class HolaMundo
 
        //holahola commit
        try{
-           Auto auto2 = new Auto ("1234567"); //excepcion
+           Auto auto2 = new Auto ("1234457"); //excepcion
            System.out.println(auto2.getPlaca());
        } catch(PlacaInvalidaException e)
        {  //o catch

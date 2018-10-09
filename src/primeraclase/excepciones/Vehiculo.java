@@ -4,12 +4,14 @@ public abstract class Vehiculo { //clase abstracta
 
     //getter
  private int numeroLlantas;
-    public int getNumeroLlantas(){
+    public int getNumeroLlantas()
+    {
 
       return numeroLlantas;
     }
 
-    public void setNumeroLlantas(int numeroLlantas) {
+    public void setNumeroLlantas(int numeroLlantas)
+    {
         this.numeroLlantas = numeroLlantas;
     }
 

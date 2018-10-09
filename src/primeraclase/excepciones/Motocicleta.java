@@ -6,7 +6,12 @@ public class Motocicleta extends Vehiculo {
       public Motocicleta()
     {
         placa = "Desconocido";
-        setNumeroLlantas(4);
+        setNumeroLlantas(2);
+    }
+
+    public void lavarVehiculo()
+    {
+        System.out.println("LAVAR A MANO");
     }
 
     public Motocicleta(String placa) throws PlacaInvalidaException{

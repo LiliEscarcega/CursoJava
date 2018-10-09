@@ -5,6 +5,7 @@ public class DVD {
     private String titulo;
     private String genero;
     private String protagonista;
+    private String director;
 
     public DVD(String titulo){
         this.titulo = titulo;
@@ -13,9 +14,10 @@ public class DVD {
         this(titulo);
         this.genero=genero;
     }
-    public DVD (String titulo, String genero, String protagonista){
-        this (genero,titulo);
+    public DVD (String titulo, String genero, String protagonista, String director){
+        this (titulo,genero);
         this.protagonista = protagonista;
+        this.director=director; //se agrega al constructor l variable director.
 
     }
     public String getTitulo() {

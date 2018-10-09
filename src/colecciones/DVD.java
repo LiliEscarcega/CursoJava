@@ -1,25 +1,29 @@
 package colecciones;
 
-public class DVD {
+public class DVD implements Comparable<DVD> {
 
     private String titulo;
     private String genero;
     private String protagonista;
     private String director;
 
-    public DVD(String titulo){
+    public DVD(String titulo) {
         this.titulo = titulo;
     }
-    public DVD (String titulo, String genero){
+
+
+    public DVD(String titulo, String genero) {
         this(titulo);
-        this.genero=genero;
+        this.genero = genero;
     }
-    public DVD (String titulo, String genero, String protagonista, String director){
-        this (titulo,genero);
+
+    public DVD(String titulo, String genero, String protagonista, String director) {
+        this(titulo, genero);
         this.protagonista = protagonista;
-        this.director=director; //se agrega al constructor l variable director.
+        this.director = director; //se agrega al constructor l variable director.
 
     }
+
     public String getTitulo() {
         return titulo;
     }
@@ -31,6 +35,10 @@ public class DVD {
     public String getProtagonista() {
         return protagonista;
     }
+    public String getDirector() {
+        return director;
+    }
+
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
@@ -44,7 +52,15 @@ public class DVD {
         this.protagonista = protagonista;
     }
 
+    @Override
+    public String toString() {
+        return titulo  + "_" + genero + "_" + protagonista + "_" + director;
+    }
+    @Override
+    public int compareTo(DVD o) {
+        return titulo.compareTo(o.titulo); //realza la comparacion de titulos PARAORDENARLOS
 
+    }
 
 
 }

@@ -1,5 +1,6 @@
 package colecciones;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
     public class EjercicioDvd {
@@ -7,11 +8,45 @@ import java.util.List;
         List<DVD> lista = llenarListas();
 
         System.out.println("ITERANDO LISTA");
-        System.out.println("____________________________________");
+            System.out.println("___________________________________________________________");
         for (DVD dvd : lista){
-            System.out.println(dvd.getTitulo());
+            System.out.println(dvd.toString());
+            System.out.println("____________________________________________________________");
         }
 
+        Collections.sort(lista);  //ORDENAMOS LA LISTA DE LAS PELICULAS
+            System.out.println("ITERANDO LISTA CON COMPARABLE");
+            System.out.println("____________________________________________________________");
+        for (DVD dvd : lista){
+            System.out.println(dvd.toString());
+            System.out.println("____________________________________________________________");
+        }
+        OrdenamientoPorGenero ordenamientoporgenero = new OrdenamientoPorGenero();
+        Collections.sort(lista, ordenamientoporgenero);
+        System.out.println("ITERANDO LISTA CON ORDENAMIENTO POR GENERO");
+            System.out.println("____________________________________________________________");
+        for (DVD dvd : lista){
+            System.out.println(dvd);
+            System.out.println("____________________________________________________________");
+        }
+        OrdenamientoPorProtagonista ordenamientoporprotagonista = new OrdenamientoPorProtagonista();
+        Collections.sort(lista, ordenamientoporprotagonista);
+        System.out.println("ITERANDO LISTA CON ORDENAMIENTO POR PROTAGONISTA");
+            System.out.println("____________________________________________________________");
+        for (DVD dvd : lista){
+            System.out.println(dvd);
+            System.out.println("____________________________________________________________");
+        }
+        OrdenamientoPorDirector ordenamientopordirector = new OrdenamientoPorDirector();
+        Collections.sort(lista, ordenamientopordirector);
+        System.out.println("ITERANDO LISTA CON ORDENAMIENTO POR DIRECTOR");
+            System.out.println("____________________________________________________________");
+        for (DVD dvd : lista){
+            System.out.println(dvd);
+            System.out.println("____________________________________________________________");
+        }
+
+        
     }
 
     private static List<DVD> llenarListas() {

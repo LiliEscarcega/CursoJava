@@ -24,7 +24,8 @@ public class DVD implements Comparable<DVD> {
 
     }
 
-    public String getTitulo() {
+    public String getTitulo()
+    {
         return titulo;
     }
 

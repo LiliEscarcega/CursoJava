@@ -46,7 +46,7 @@ import java.util.List;
             System.out.println("____________________________________________________________");
         }
 
-        
+
     }
 
     private static List<DVD> llenarListas() {
@@ -54,7 +54,7 @@ import java.util.List;
         DVD dvd0 = new DVD("El conjuro","Terror", "Vera Farmiga","James Wan");
         DVD dvd1 = new DVD("Martyrs","Terror", "Troian Bellisario","Pascal Laugier");
         DVD dvd2 = new DVD("Cannibal Holocaust","Terror", "Teresa Palmer", "Ruggero Deodato");
-        DVD dvd3 = new DVD("Cuando las luces se apagan","Terror", "", "David F. Sandberg");
+        DVD dvd3 = new DVD("Cuando las luces se apagan","Terror", "Gabriel Bateman", "David F. Sandberg");
         DVD dvd4 = new DVD("La bruja de Blair","Terror", "Heather Donahue", "Eduardo Sanchez");
         DVD dvd5 = new DVD("Yo antes de ti","Romantica", "Louisa Clark", "Thea Sharrock");
         DVD dvd6 = new DVD("No se aceptan devoluciones","Comedia", " Eugenio Derbez", "Eugenio Derbez");

@@ -1,9 +1,11 @@
 package estatic;
+import colecciones.DVD;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GalletasTest {
     public static void main (String[] args) {
+        //  DVD dvd = new DVD();
         List<Galleta> lista = llenarGalleta();
         System.out.println("ITERANDO GALLETAS y GANANDO COMO SIEMPRE!!!");
             System.out.println("___________________________________________________________");

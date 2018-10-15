@@ -8,6 +8,7 @@ public class Galleta {
     private String forma;
     private static  int cantidad = 0;
 
+
     public Galleta(String color, String tamaño, String sabor, String forma) {
 
         this.color = color;
